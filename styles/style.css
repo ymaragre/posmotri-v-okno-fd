@@ -19,6 +19,7 @@ html {
   font-family: 'Fira Sans Condensed', Arial, sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  text-underline-offset: 2px;
 }
 
 .content {
@@ -125,7 +126,6 @@ input {
 
 .search-form__checkbox-list .search-form__label:hover {
   text-decoration: 1px underline solid #fff;
-  text-underline-offset: 2px;
 }
 
 .search-form__pseudo-checkbox {
@@ -152,6 +152,35 @@ input {
 .search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
   outline-offset: 2px;
+}
+
+.button {
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+}
+
+.button:hover {
+  text-decoration: underline 1px solid #fff;
+}
+
+.button:active {
+  text-decoration: none;
+  background-color: #545050;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+}
+
+.search-form__submit-button {
+  align-self: end;
+  padding: 6px 73px;
 }
 
 .content__details {
@@ -244,6 +273,10 @@ input {
   height: 103px;
   object-fit: cover;
   object-position: center;
+}
+
+.more-button {
+  padding: 5px 0;
 }
 
 .visually-hidden {

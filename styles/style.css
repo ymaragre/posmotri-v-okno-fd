@@ -137,6 +137,7 @@ input {
 
 .search-form__checkbox-list .search-form__label:hover {
   text-decoration: 1px underline solid #fff;
+  cursor: pointer;
 }
 
 .search-form__pseudo-checkbox {
@@ -164,6 +165,7 @@ input {
   border: 1px solid #fff;
   color: #fff;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -242,6 +244,7 @@ input {
 .content__card-link {
   display: block;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .content__card-link:hover {

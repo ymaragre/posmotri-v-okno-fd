@@ -60,11 +60,16 @@ input {
   font: inherit;
 }
 
+.result {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 .result__video-container {
   position: relative;
   width: 711px;
   height: 386px;
-  margin-bottom: 16px;
 }
 
 .result__video {
@@ -77,7 +82,6 @@ input {
   display: flex;
   justify-content: space-between;
   align-items: start;
-  line-height: 100%;
 }
 
 .search-form__fieldset {
@@ -85,7 +89,7 @@ input {
 }
 
 .search-form__fieldset-title {
-  margin-bottom: 9px;
+  margin-bottom: 5px;
   font: inherit;
 }
 
@@ -94,6 +98,11 @@ input {
   align-items: center;
   gap: 5px;
   width: fit-content;
+}
+
+.search-form__label:has(:focus-visible) {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
 }
 
 .search-form__textfield {
@@ -151,11 +160,6 @@ input {
   opacity: 1;
 }
 
-.search-form__label:has(:focus-visible) {
-  outline: 1px solid #fff;
-  outline-offset: 2px;
-}
-
 .button {
   border: 1px solid #fff;
   color: #fff;
@@ -182,7 +186,7 @@ input {
 
 .search-form__submit-button {
   align-self: end;
-  padding: 6px 73px;
+  padding: 4px 73px;
 }
 
 .content__details {
@@ -197,9 +201,9 @@ input {
 }
   
 .content__title {
-  margin-bottom: 22px;
+  margin-bottom: 20px;
   font-size: 75px;
-  line-height: 94%;
+  line-height: 0.94;
 }
 
 .content__accent {
@@ -211,8 +215,8 @@ input {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  height: 298px;
-  padding: 3px;
+  height: 300px;
+  padding: 2px 3px;
   overflow: auto;
 }
 
@@ -273,17 +277,16 @@ input {
 
 .content__video-card-title {
   display: block;
-  margin-bottom: 6px;
   overflow: hidden;
   font-size: 30px;
-  line-height: 100%;
+  line-height: 1.2;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
 .content__video-card-description {
   display: -webkit-box;
-  min-height: 18px;
+  padding: 2px 0;
   overflow: hidden;
   line-height: 16.2px;
   -webkit-box-orient: vertical;
